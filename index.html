@@ -5,45 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <style>
-    /* --- Basic Page Styling --- */
+    /* --- Page Background --- */
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      color: #fff;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://wallpapercave.com/wp/wp9152275.jpg") no-repeat center center fixed;
+      background-size: cover;
     }
 
+    /* --- Header --- */
     header {
-      background-color: #4f46e5;
-      color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      color: #ffffff;
     }
 
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* --- Navigation --- */
     nav {
-      background-color: #3730a3;
+      background-color: rgba(0, 0, 0, 0.5);
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem 0;
+      backdrop-filter: blur(5px);
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #a5b4fc;
     }
 
+    /* --- Main Content --- */
     main {
       max-width: 900px;
       margin: 2rem auto;
@@ -52,26 +64,36 @@
 
     section {
       margin-bottom: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
     }
 
     h2 {
-      color: #4f46e5;
+      color: #a5b4fc;
+      border-bottom: 2px solid #a5b4fc;
+      padding-bottom: 0.5rem;
     }
 
     .project {
-      background: white;
+      background: rgba(255, 255, 255, 0.15);
       padding: 1rem;
       margin-top: 1rem;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
+    /* --- Footer --- */
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #4f46e5;
+      background-color: rgba(0, 0, 0, 0.5);
       color: white;
-      margin-top: 3rem;
+      backdrop-filter: blur(5px);
+    }
+
+    a {
+      color: #93c5fd;
     }
   </style>
 </head>
